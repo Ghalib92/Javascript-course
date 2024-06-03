@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom Projects</title>
+
+<style>
+    .is-subscribed{
+        background-color:black;
+        color: white;
+    
+    
+}
+</style>
 </head>
+
 <body>
-       
+          
 <p>Youtube Subscribe Button</p>
 <button onclick="
 subscribe();
@@ -22,12 +32,16 @@ function subscribe(){
 
         if(buttonElement.innerHTML==='Subscribe'){
             buttonElement.innerHTML='Subscribed';
+            buttonElement.classList.add('is-subscribed');
+            
         }else {
             buttonElement.innerHTML='Subscribe';
+            butttonElement.classList.remove('is-subscribed');
         }
 
 
 };
     </script>
+    
 </body>
 </html>
